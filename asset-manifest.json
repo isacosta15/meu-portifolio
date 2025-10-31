@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/meu-portifolio/static/css/main.98dc36a3.css",
+    "main.js": "/meu-portifolio/static/js/main.29217e48.js",
+    "static/media/senai.png": "/meu-portifolio/static/media/senai.2cff180ddfd565290ff2.png",
+    "static/media/italents.png": "/meu-portifolio/static/media/italents.b3268fb8d42efb0da4cd.png",
+    "static/media/Perfil.jpg": "/meu-portifolio/static/media/Perfil.dcc9bf1d8cf6b9cd2908.jpg",
+    "static/media/cerebro.jpg": "/meu-portifolio/static/media/cerebro.258dc396a38c576495e1.jpg",
+    "index.html": "/meu-portifolio/index.html",
+    "main.98dc36a3.css.map": "/meu-portifolio/static/css/main.98dc36a3.css.map",
+    "main.29217e48.js.map": "/meu-portifolio/static/js/main.29217e48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98dc36a3.css",
+    "static/js/main.29217e48.js"
+  ]
+}
