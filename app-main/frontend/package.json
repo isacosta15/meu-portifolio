@@ -60,7 +60,7 @@
     "build": "craco build",
     "test": "craco test",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npx gh-pages -d build"
   },
   "browserslist": {
     "production": [
