@@ -78,7 +78,7 @@ export const projects = [
     subtitle: "Campus Party Brasil 16 (2024)",
     description: "Projeto de robótica educativa apresentado como startup.",
     image: "https://images.unsplash.com/photo-1553406830-ef2513450d76?w=600&h=400&fit=crop",
-    siteUrl: "https://nanda-pereira.github.io/Arduino-PlayTech/?fbclid=PAb21jcANxKcRleHRuA2FlbQIxMQABp_ygtdfFslWHMvp4AVWxIOM56ZToEhmha9tN9wwFFiOWtnjA9uLaL3JkTUxj_aem_sfcUT1vfZ2ioNCzVB4_L3Q",
+    siteUrl: "https://youtu.be/GItG0J0CYiY?si=G97eT3D3PEfABEzM",
     tags: ["Arduino", "IoT", "Educação"]
   },
   {
