@@ -1,9 +1,12 @@
 // Mock data for Isabela's Portfolio
 // Exemplo: Se o componente está em src/components/ e a foto em src/assets/images/
 import fotoPerfil from 'src/data/img/Perfil.jpg';
-import cerebro from 'src/data/img/cerebro.jpg';
 import italents from 'src/data/img/italents.png';
 import senai from 'src/data/img/senai.png';
+import EcoTrack from 'src/data/img/Eco.png';
+import Yomu from 'src/data/img/Yomu.jpg';
+import Arduino from 'src/data/img/Arduino.png';
+import Alzheimer from 'src/data/img/Alzheimer.png';
 
 export const personalInfo = {
   name: "Isabela Costa Nunes",
@@ -59,7 +62,7 @@ export const projects = [
     title: "EcoTrack",
     subtitle: "Hackteen (Venturus/Fundação Iochpe, 2025)",
     description: "Plataforma gamificada de reciclagem com reconhecimento de materiais via TensorFlow, sistema de pontuação e painel administrativo.",
-    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop",
+    image: EcoTrack,
     siteUrl: "https://ecotrack-frontend-deploy.vercel.app/",
     tags: ["TensorFlow", "React", "Gamificação"]
   },
@@ -68,7 +71,7 @@ export const projects = [
     title: "YOMU - Você no Mundo!",
     subtitle: "Desafio Learning Sectors (British Council, 2025)",
     description: "Plataforma inclusiva voltada à aprendizagem de crianças com deficiência visual e auditiva.",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
+    image: Yomu,
     siteUrl: "https://youtu.be/QSfhEHnZLyY",
     tags: ["Acessibilidade", "Educação", "React"]
   },
@@ -77,7 +80,7 @@ export const projects = [
     title: "Arduino PlayTech",
     subtitle: "Campus Party Brasil 16 (2024)",
     description: "Projeto de robótica educativa apresentado como startup.",
-    image: "https://images.unsplash.com/photo-1553406830-ef2513450d76?w=600&h=400&fit=crop",
+    image: Arduino,
     siteUrl: "https://youtu.be/GItG0J0CYiY?si=G97eT3D3PEfABEzM",
     tags: ["Arduino", "IoT", "Educação"]
   },
@@ -86,7 +89,7 @@ export const projects = [
     title: "Alzheimer-Care",
     subtitle: "X-Mostra de Projetos COTUCA - UNICAMP(2024)",
     description: "Aplicativo móvel criado para auxiliar no monitoramento de pacientes com Alzheimer.",
-    image: cerebro,
+    image: Alzheimer,
     siteUrl: "https://github.com/isacosta15/alzheimer-care",
     tags: ["Mobile", "React Native", "Java", "Monitoramento"]
   }
