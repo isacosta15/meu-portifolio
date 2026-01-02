@@ -61,8 +61,8 @@ const About = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-12 pt-8 border-t border-[#B67DDC]/20">
                 <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold text-[#7A3E9D] mb-2">3º</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Ano ETEC</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-[#7A3E9D] mb-2">1º</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Ano FATEC</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl sm:text-4xl font-bold text-[#7A3E9D] mb-2">6+</div>
