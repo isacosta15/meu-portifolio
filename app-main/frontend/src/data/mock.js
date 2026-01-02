@@ -20,12 +20,11 @@ export const personalInfo = {
 };
 
 export const about = {
-  description: `Sou estudante da 3ª Série do curso Técnico em Desenvolvimento de Sistemas na ETEC de Carapicuíba.
-Tenho grande interesse por Análise e Desenvolvimento de Software, com experiência prática em Java, JavaScript, React, .NET e SQL.
+  description: `Sou formada no curso Técnico em Desenvolvimento de Sistemas pela ETEC de Carapicuíba e atualmente curso o primeiro ano de Análise e Desenvolvimento de Sistemas na FATEC. Tenho grande interesse na área de desenvolvimento de software, com experiência prática em Java, JavaScript, React, .NET e SQL.
 
-Desenvolvi habilidades sólidas em trabalho em equipe, resolução de problemas, liderança e comunicação, participando de diversas competições e hackathons voltados à tecnologia e inovação.
+Ao longo da minha formação, desenvolvi habilidades sólidas em trabalho em equipe, resolução de problemas, liderança e comunicação, participando de competições e hackathons voltados à tecnologia e à inovação.
 
-Busco constantemente novos desafios que me permitam evoluir e contribuir para projetos que unam tecnologia e impacto social.`
+Busco constantemente novos desafios que me permitam evoluir profissionalmente e contribuir para projetos que unam tecnologia e impacto social.`
 };
 
 export const hardSkills = [
@@ -135,7 +134,7 @@ export const certifications = [
 ];
 
 export const education = {
-  institution: "ETEC de Carapicuíba",
-  course: "Ensino Médio Técnico em Desenvolvimento de Sistemas (AMS)",
-  conclusion: "Conclusão prevista: 2025"
+  institution: "Fatec de Carapicuíba",
+  course: "Graduação Tecnológica em Análise e Desenvolvimento de Sistemas (AMS)",
+  conclusion: "Conclusão prevista: 2027"
 };
