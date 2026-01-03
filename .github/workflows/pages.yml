@@ -17,18 +17,21 @@ jobs:
       name: github-pages
 
     steps:
-      # 1️⃣ Faz checkout do repositório
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Cria o artifact com os arquivos do site (v4 agora)
+      # Upload apenas os arquivos do site
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: .  # envia todos os arquivos do repositório
+          path: |
+            index.html
+            css/
+            js/
+            assets/
+            images/
 
-      # 3️⃣ Faz deploy para o GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
