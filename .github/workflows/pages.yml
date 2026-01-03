@@ -3,18 +3,19 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main  # ou a branch que você usa
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages  # ⚠️ Isso é obrigatório agora
+      name: github-pages
+
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+
+      # Se não precisar de build, só deploy
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
         with:
-          node-version: '18'
-      - run: npm install
-      - run: npm run build # se tiver build, senão pode remover
-      - uses: actions/deploy-pages@v4
+          folder: /  # pasta raiz do seu site
