@@ -11,7 +11,7 @@ import Alzheimer from 'src/data/img/Alzheimer.png';
 export const personalInfo = {
   name: "Isabela Costa Nunes",
   title: "Desenvolvedora em Formação",
-  subtitle: "Fullstack • Java • JavaScript • React • .NET • SQL",
+  subtitle: "Fullstack • Java • JavaScript • React • Python • SQL",
   quote: "Transformo ideias em soluções digitais criativas e funcionais.",
   email: "isabela.costa.dev@email.com",
   linkedin: "https://linkedin.com/in/isabela-nunes-dev",
