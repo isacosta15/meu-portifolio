@@ -3,21 +3,32 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main  # ou outra branch que você use
+      - main
 
 permissions:
-  contents: read        # necessário para ler o repositório
-  pages: write          # necessário para publicar no GitHub Pages
-  id-token: write       # necessário para a ação deploy-pages@v4
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
+      # 1️⃣ Cria um artifact com os arquivos do site
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: .  # envia todos os arquivos do repositório (index.html, CSS, JS etc.)
+
+      # 2️⃣ Deploy para o GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages  # ⚠️ nome deve ser o mesmo do upload
