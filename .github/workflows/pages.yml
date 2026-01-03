@@ -11,24 +11,25 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
 
     steps:
+      # 1️⃣ Faz checkout do repositório
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 1️⃣ Cria um artifact com os arquivos do site
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
+      # 2️⃣ Cria o artifact com os arquivos do site (v4 agora)
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: .  # envia todos os arquivos do repositório (index.html, CSS, JS etc.)
+          path: .  # envia todos os arquivos do repositório
 
-      # 2️⃣ Deploy para o GitHub Pages
+      # 3️⃣ Faz deploy para o GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: github-pages  # ⚠️ nome deve ser o mesmo do upload
+          artifact_name: github-pages
