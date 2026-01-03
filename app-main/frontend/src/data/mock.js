@@ -136,5 +136,5 @@ export const certifications = [
 export const education = {
   institution: "Fatec de Carapicuíba",
   course: "Graduação Tecnológica em Análise e Desenvolvimento de Sistemas (AMS)",
-  conclusion: "Conclusão prevista: 2027"
+  conclusion: "Conclusão prevista: 202"
 };
