@@ -2,23 +2,19 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches:
+      - main  # ou a branch que você usa
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages  # ⚠️ Isso é obrigatório agora
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          path: .
-
+          node-version: '18'
+      - run: npm install
+      - run: npm run build # se tiver build, senão pode remover
       - uses: actions/deploy-pages@v4
