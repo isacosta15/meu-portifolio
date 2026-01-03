@@ -3,7 +3,12 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # ou outra branch que você use
+
+permissions:
+  contents: read        # necessário para ler o repositório
+  pages: write          # necessário para publicar no GitHub Pages
+  id-token: write       # necessário para a ação deploy-pages@v4
 
 jobs:
   deploy:
@@ -14,8 +19,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Se não precisar de build, só deploy
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          folder: /  # pasta raiz do seu site
